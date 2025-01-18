@@ -1,0 +1,95 @@
+
+    <!--
+    Name: Olivier Niyonshima
+    fileName: hometown.html
+    Date of creation: January 16 2025
+    This is my second page, enabling people/users to share some information about my home town through a form.  -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+
+    </head>
+    <body>
+
+        
+    <fieldset>
+        
+            <fieldset>
+                <legend>1. User Info</legend>
+                <p>This is page 2 , Click <a href="hometown.html">here</a> to go to page 1</p>
+                <h2>Share your information about my home town</h2>
+                
+                <form action="Lab1Form.php" method="post">
+                    
+                    <label for="firstName">First Name </label>
+                    <input type="text" id = "firstName" name= "firstName" readonly> 
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label for="lastName">Last Name</label>
+                    <input type="text"  id="lastName" name="lastName" maxlength="10"> <br> <br><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="format for email is xxx@yyy.zzz"> <br> <br><br>
+                </form>
+            </fieldset>
+            
+            
+        <fieldset>
+            <legend>2.Location</legend>
+            <form action="Lab1Form.php" method="post">
+                <label for="address">Address </label>
+                <input type="text" id ="address" name="address"> <br> <br>
+                <label for="city">City</label> &nbsp;&nbsp;&nbsp;
+                <input type="text" id="city" name="city">
+                <label for="state">State</label>&nbsp;&nbsp;&nbsp;
+                <input type="text" id="state" name="state">
+                <label for="zip">Zip</label>&nbsp;&nbsp;&nbsp;
+                <input type="number" id="zip" name="zip"> <br><br><br>
+                <label for="phoneNumber">Phone Number </label>
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="NNN-NNN-NNNN">
+                &nbsp;  &nbsp; &nbsp;
+                <label for="Country">Country</label>
+                <select name="Country" id="Country">
+                    <option value="Canada">Canada</option>
+                    <option value="USA">USA</option>
+                    <option value="Rest">Rest of the World</option>
+                </select> <br><br><br>
+                <p>Continent</p>
+                <label for="NorthAmerica">North America</label>
+                <input type="radio" id="NorthAmerica" name= "continent" value="NorthAmerica">
+                <br> <br> 
+                <label for="Europe">Europe</label>
+                <input type="radio" id="Europe" name="Continent" value="Europe">
+                <br> <br>
+                <label for="SouthAmerica">South America</label>
+                <input type="radio" id="SouthAmerica" name= "continent" value="SouthAmerica">
+                <br> <br> <br>
+            </form>
+        </fieldset>
+        <fieldset>
+        <legend>3. Favorite Place</legend>
+        <form action="Lab1Form.php" method="post">
+                <label for="favoritePlace">Favorite Place:</label>
+                <input type="text" id="favoritePlace" name="favoritePlace">
+                <br><br>
+                <label for="message">Why do you love this place </label> &nbsp;&nbsp;
+                <textarea name="message" id="message" rows="3" cols="50"></textarea>
+                <br><br>
+                
+        <br><br>
+        <input type= "button"  id="btn1" name="send" value="send"> &nbsp;&nbsp;
+                
+        <input type="reset" id="btn2"  name="clearInformation" value="Clear Information ">
+        <br><br>
+            &nbsp;&nbsp;<div> Olivier Niyonshima  &copy; 2025 </div> 
+        </form>
+    </fieldset>
+
+
+    </body>
+    <br> <br><br>
+
+
+
+    </html>
